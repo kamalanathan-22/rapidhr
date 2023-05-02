@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "fa227c0c-ddc4-4382-ad66-e10ab4eaf4d7",
+		"name": "RapidHR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14011863"
+	},
+	"item": [
+		{
+			"name": "AWS Copy",
+			"item": [
+				{
+					"name": "AWS Career journey",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Skills\":[\r\n      \"Corporate and Business Law \",\r\n      \"Data Analytics \",\r\n      \"Data Governance \",\r\n      \"Financial Analysis \",\r\n      \"Professional and Business Ethics \"\r\n   ],\r\n   \"Competency\":[\r\n      \"4\",\r\n      \"5\",\r\n      \"3\",\r\n      \"6\",\r\n      \"4\"\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-143-120-150.ap-southeast-1.compute.amazonaws.com:5000/path?sourcejobid=950&targetjobid=1024&flag=0&sourceGrade=3&targetGrade=6",
+							"protocol": "http",
+							"host": [
+								"ec2-18-143-120-150",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5000",
+							"path": [
+								"path"
+							],
+							"query": [
+								{
+									"key": "sourcejobid",
+									"value": "950"
+								},
+								{
+									"key": "targetjobid",
+									"value": "1024"
+								},
+								{
+									"key": "flag",
+									"value": "0"
+								},
+								{
+									"key": "sourceGrade",
+									"value": "3"
+								},
+								{
+									"key": "targetGrade",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AWS Pathwayrole API2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "prevjobid",
+									"value": "666",
+									"type": "text"
+								},
+								{
+									"key": "currjobid",
+									"value": "111",
+									"type": "text"
+								},
+								{
+									"key": "nxtjobid",
+									"value": "206",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://ec2-18-143-120-150.ap-southeast-1.compute.amazonaws.com:5001/role",
+							"protocol": "http",
+							"host": [
+								"ec2-18-143-120-150",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5001",
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AWS Suggested Moves API",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Skills\":[\r\n      \"Corporate and Business Law \",\r\n      \"Data Analytics \",\r\n      \"Data Governance \",\r\n      \"Financial Analysis \",\r\n      \"Professional and Business Ethics \"\r\n   ],\r\n   \"Competency\":[\r\n      \"4\",\r\n      \"5\",\r\n      \"3\",\r\n      \"6\",\r\n      \"4\"\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-143-120-150.ap-southeast-1.compute.amazonaws.com:5002/roles?jobid=102",
+							"protocol": "http",
+							"host": [
+								"ec2-18-143-120-150",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5002",
+							"path": [
+								"roles"
+							],
+							"query": [
+								{
+									"key": "jobid",
+									"value": "102"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AWS Gigsmatch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Employee\":{\r\n       \r\n      \"Name\":\"emp1\",\r\n      \"Skills\":[\r\n         {\r\n            \"Skillname\":\"Systems Thinking \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Aesthetic and Design Sensibility \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Critical Thinking \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Thinking Practice \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Technical Drawing \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Sketching \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Standards and Specification \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Material Studies and Production Processes \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Business Presentation Delivery \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Conceptual Thinking \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Cultural Sensitivity for Design \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Creation and Development \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Digital and Physical Prototyping \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Empathetic Design \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Imagination and Exploration \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Narrative Design \",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"User Experience Design \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Data Analysis and Interpretation \",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Sustainability and Ethics Management \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Intellectual Property Management \",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"Form Giving \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Product and Production Engineering \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Visual Communication \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Teamwork\",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Creative Thinking \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Transdisciplinary Thinking \",\r\n            \"Level\":4\r\n         },\r\n         {\r\n            \"Skillname\":\"Computational Thinking \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Digital Technology Adoption and Innovation \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Visual Communication \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Leadership\",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"Financial Modelling \",\r\n            \"Level\":2\r\n         }\r\n      ]\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-143-120-150.ap-southeast-1.compute.amazonaws.com:5003/gigsmatch",
+							"protocol": "http",
+							"host": [
+								"ec2-18-143-120-150",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5003",
+							"path": [
+								"gigsmatch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AWS Jobsmatch",
+					"request": {
+						"auth": {
+							"type": "basic"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Employee\":{\r\n       \r\n      \"Name\":\"emp1\",\r\n      \"Skills\":[\r\n         {\r\n            \"Skillname\":\"Systems Thinking \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Aesthetic and Design Sensibility \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Critical Thinking \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Thinking Practice \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Technical Drawing \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Sketching \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Standards and Specification \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Material Studies and Production Processes \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Business Presentation Delivery \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Conceptual Thinking \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Cultural Sensitivity for Design \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Creation and Development \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Digital and Physical Prototyping \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Empathetic Design \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Imagination and Exploration \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Narrative Design \",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"User Experience Design \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Data Analysis and Interpretation \",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Sustainability and Ethics Management \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Intellectual Property Management \",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"Form Giving \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Product and Production Engineering \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Visual Communication \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Teamwork\",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Creative Thinking \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Transdisciplinary Thinking \",\r\n            \"Level\":4\r\n         },\r\n         {\r\n            \"Skillname\":\"Computational Thinking \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Digital Technology Adoption and Innovation \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Visual Communication \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Leadership\",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"Financial Modelling \",\r\n            \"Level\":2\r\n         }\r\n      ]\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-143-120-150.ap-southeast-1.compute.amazonaws.com:5004/jobsmatch",
+							"protocol": "http",
+							"host": [
+								"ec2-18-143-120-150",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5004",
+							"path": [
+								"jobsmatch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AWS Mentorsmatch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Employee\":{\r\n       \r\n      \"Name\":\"emp1\",\r\n      \"Skills\":[\r\n         {\r\n            \"Skillname\":\"Systems Thinking \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Aesthetic and Design Sensibility \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Critical Thinking \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Thinking Practice \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Technical Drawing \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Sketching \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Standards and Specification \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Material Studies and Production Processes \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Business Presentation Delivery \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Conceptual Thinking \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Cultural Sensitivity for Design \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Creation and Development \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Digital and Physical Prototyping \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Empathetic Design \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Imagination and Exploration \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Narrative Design \",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"User Experience Design \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Data Analysis and Interpretation \",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"Design Sustainability and Ethics Management \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Intellectual Property Management \",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"Form Giving \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Product and Production Engineering \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Visual Communication \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Teamwork\",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Creative Thinking \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Transdisciplinary Thinking \",\r\n            \"Level\":4\r\n         },\r\n         {\r\n            \"Skillname\":\"Computational Thinking \",\r\n            \"Level\":0\r\n         },\r\n         {\r\n            \"Skillname\":\"Digital Technology Adoption and Innovation \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Visual Communication \",\r\n            \"Level\":3\r\n         },\r\n         {\r\n            \"Skillname\":\"Leadership\",\r\n            \"Level\":2\r\n         },\r\n         {\r\n            \"Skillname\":\"Financial Modelling \",\r\n            \"Level\":2\r\n         }\r\n      ]\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-143-120-150.ap-southeast-1.compute.amazonaws.com:5005/mentorsmatch",
+							"protocol": "http",
+							"host": [
+								"ec2-18-143-120-150",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5005",
+							"path": [
+								"mentorsmatch"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
